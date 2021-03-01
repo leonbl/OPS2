@@ -1,4 +1,5 @@
-Koda iz knjige OSTEP (Uvod - http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf).
+# Koda iz knjige OSTEP 
+(Uvod - http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf).
 
 Za prevajanje, samo napišite:
 
