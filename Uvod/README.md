@@ -1,15 +1,14 @@
-# Overview
+Koda iz knjige OSTEP (Uvod - http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf).
 
-Code from OSTEP chapter [Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf).
+Za prevajanje, samo napišite:
 
-To compile, just type:
 ```
 prompt> make
 ```
 
-See the highly primitive `Makefile` for details.
+Za podrobnosti si lahko pogledate `Makefile`.
 
-Then, run them! Examples:
+Programe nato zaženite! Primeri:
 
 ```
 prompt> ./cpu A
@@ -28,20 +27,19 @@ prompt> ./io
 ```
 
 
-## Details
+## Podrobnosti
 
-One issue with mem.c is that address space randomization is usually on by
-default. To turn it off:
+Pri mem.c je problem, ker je "address space randomization" običajno privzeto vključen na modernih sistemih. Če ga hočete izključiti:
 
 ### macOS
-From [stackoverflow](http://stackoverflow.com/questions/23897963/documented-way-to-disable-aslr-on-os-x)
+[stackoverflow](http://stackoverflow.com/questions/23897963/documented-way-to-disable-aslr-on-os-x)
 
-Just compile/link as follows:
+Rešite tako, da prevedete:
     gcc -o mem mem.c -Wall -Wl,-no_pie
 
 ### Linux
 
-From Giovanni Lagorio:
+Giovanni Lagorio:
 
 Under Linux you can disable ASLR, without using a debugger, in (at least)  two ways:
 * Use the command setarch to run a process with ASLR disabled; I typically run
